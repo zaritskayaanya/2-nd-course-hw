@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 650px);
+}
+
+.top {
+    background-image: url(image/Rectangle\ 111002150.png);
+    height: 800px;
+
+    &__content {
+        width: 769px;
+        height: 358px;
+        padding-top: 196px;
+        gap: 48px;
+    }
+
+    &__title {
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: left;
+        color: rgba(32, 32, 39, 1);
+        padding-bottom: 24px;
+    }
+
+    &__text {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        padding-bottom: 48px;
+
+        &_bold {
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            text-align: left;
+        }
+    }
+
+    &__button {
+        width: 247px;
+        height: 66px;
+        padding: 16px 28px 16px 28px;
+        gap: 10px;
+        border-radius: 60px;
+        border: 1px solid #202027;
+        background-color: #202027;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 34px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+.description {
+    background-image: url(image/Rectangle\ 111002149.png);
+
+    &-content {
+        padding-top: 72px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__title {
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: left;
+        color: #FFFFFF;
+        padding-top: 94px;
+    }
+
+    &__text {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        color: #FFFFFF;
+        padding-top: 24px;
+    }
+
+    &-game {
+        width: 378px;
+        height: 512px;
+        border-radius: 30px;
+        background: #FFFFFF;
+    }
+
+    &-game-big {
+        width: 378px;
+        height: 551px;
+        border-radius: 30px;
+        background: #FFFFFF;
+    }
+
+    &-game-small {
+        width: 378px;
+        height: 473px;
+        border-radius: 30px;
+        background: #FFFFFF;
+    }
+
+    &-img {
+        border-radius: 30px;
+        padding-bottom: 32px;
+    }
+
+    &-form {
+        width: 108px;
+        height: 36px;
+        border-radius: 53px;
+        background: #F7F7F7;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        color: #202027;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 32px;
+    }
+
+    &-text {
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39.01px;
+        text-align: left;
+        padding-top: 16px;
+        padding-left: 32px;
+    }
+}
