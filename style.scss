@@ -7,6 +7,14 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+article {
+    position: relative;
+}
+
+h4>a::before {
+    position: absolute;
+}
+
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 650px);
@@ -154,6 +162,8 @@ body {
         line-height: 39.01px;
         text-align: left;
         padding-top: 16px;
-        padding-left: 32px;
+        padding-left: 16px;
+        text-decoration: none;
+        display: flex;
     }
 }
