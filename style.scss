@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
 }
@@ -75,10 +79,11 @@ h4>a::before {
         line-height: 34px;
         text-align: center;
         color: #FFFFFF;
+        text-decoration: none;
     }
 }
 
-button:hover {
+a:hover {
     background-color: #FFFFFF;
     color: #000000;
 }
