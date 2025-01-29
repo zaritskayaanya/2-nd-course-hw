@@ -93,86 +93,116 @@ a:hover {
     background-repeat: no-repeat;
     background-position: 100% 15%;
 
-    &-content {
+    &__content {
+        &-title {
+            font-family: Montserrat;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 78px;
+            text-align: left;
+            color: #FFFFFF;
+            padding-top: 94px;
+        }
+
+        &-text {
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: left;
+            color: #FFFFFF;
+            padding-top: 24px;
+        }
+    }
+
+    &__block {
         padding-top: 72px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 32px;
+
+        &-games {
+            text-decoration: none;
+        }
+
+        &-img {
+            border-radius: 30px;
+            padding-bottom: 32px;
+        }
+
+        &-form {
+            width: 108px;
+            height: 36px;
+            border-radius: 53px;
+            background: #F7F7F7;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 18px;
+            color: #202027;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 32px;
+            text-decoration: none;
+        }
+
+        &-text {
+            font-family: Montserrat;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39.01px;
+            text-align: left;
+            color: #202027;
+            padding-top: 16px;
+            padding-left: 16px;
+            text-decoration: none;
+            display: flex;
+
+            :hover {
+                color: #202027;
+            }
+        }
+
+        &-game-small {
+            width: 378px;
+            height: 473px;
+            border-radius: 30px;
+            background: #FFFFFF;
+        }
+
+        &-game {
+            width: 378px;
+            height: 512px;
+            border-radius: 30px;
+            background: #FFFFFF;
+        }
+
+        &-game-big {
+            width: 378px;
+            height: 551px;
+            border-radius: 30px;
+            background: #FFFFFF;
+        }
     }
 
-    &__title {
-        font-family: Montserrat;
-        font-size: 64px;
-        font-weight: 700;
-        line-height: 78px;
-        text-align: left;
-        color: #FFFFFF;
-        padding-top: 94px;
-    }
 
-    &__text {
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 32px;
-        text-align: left;
-        color: #FFFFFF;
-        padding-top: 24px;
-    }
 
-    &-game {
-        width: 378px;
-        height: 512px;
-        border-radius: 30px;
-        background: #FFFFFF;
-    }
 
-    &-game-big {
-        width: 378px;
-        height: 551px;
-        border-radius: 30px;
-        background: #FFFFFF;
-    }
 
-    &-game-small {
-        width: 378px;
-        height: 473px;
-        border-radius: 30px;
-        background: #FFFFFF;
-    }
 
-    &-img {
-        border-radius: 30px;
-        padding-bottom: 32px;
-    }
 
-    &-form {
-        width: 108px;
-        height: 36px;
-        border-radius: 53px;
-        background: #F7F7F7;
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 18px;
-        color: #202027;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 32px;
-    }
 
-    &-text {
-        font-family: Montserrat;
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 39.01px;
-        text-align: left;
-        padding-top: 16px;
-        padding-left: 16px;
-        text-decoration: none;
-        display: flex;
-    }
+
+
+
+
+
+
+
+
+
+
 }

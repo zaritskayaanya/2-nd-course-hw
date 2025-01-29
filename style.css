@@ -88,15 +88,7 @@ a:hover {
   background-repeat: no-repeat;
   background-position: 100% 15%;
 }
-.description-content {
-  padding-top: 72px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 32px;
-}
-.description__title {
+.description__content-title {
   font-family: Montserrat;
   font-size: 64px;
   font-weight: 700;
@@ -105,7 +97,7 @@ a:hover {
   color: #FFFFFF;
   padding-top: 94px;
 }
-.description__text {
+.description__content-text {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 400;
@@ -114,29 +106,22 @@ a:hover {
   color: #FFFFFF;
   padding-top: 24px;
 }
-.description-game {
-  width: 378px;
-  height: 512px;
-  border-radius: 30px;
-  background: #FFFFFF;
+.description__block {
+  padding-top: 72px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
 }
-.description-game-big {
-  width: 378px;
-  height: 551px;
-  border-radius: 30px;
-  background: #FFFFFF;
+.description__block-games {
+  text-decoration: none;
 }
-.description-game-small {
-  width: 378px;
-  height: 473px;
-  border-radius: 30px;
-  background: #FFFFFF;
-}
-.description-img {
+.description__block-img {
   border-radius: 30px;
   padding-bottom: 32px;
 }
-.description-form {
+.description__block-form {
   width: 108px;
   height: 36px;
   border-radius: 53px;
@@ -149,16 +134,39 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 32px;
+  margin-left: 32px;
+  text-decoration: none;
 }
-.description-text {
+.description__block-text {
   font-family: Montserrat;
   font-size: 32px;
   font-weight: 700;
   line-height: 39.01px;
   text-align: left;
+  color: #202027;
   padding-top: 16px;
   padding-left: 16px;
   text-decoration: none;
   display: flex;
+}
+.description__block-text :hover {
+  color: #202027;
+}
+.description__block-game-small {
+  width: 378px;
+  height: 473px;
+  border-radius: 30px;
+  background: #FFFFFF;
+}
+.description__block-game {
+  width: 378px;
+  height: 512px;
+  border-radius: 30px;
+  background: #FFFFFF;
+}
+.description__block-game-big {
+  width: 378px;
+  height: 551px;
+  border-radius: 30px;
+  background: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
