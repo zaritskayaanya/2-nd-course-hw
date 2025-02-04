@@ -1,0 +1,131 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 57px;
+        padding-right: 56px;
+    }
+
+    .top {
+        background: #E1FF8F;
+        background-image: url(img/star1.png), url(img/star2.png), url(img/Vectormob.svg);
+        background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 100% 0px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+
+        &__title {
+            color: #202027;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        &__text {
+            color: #202027;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            max-width: 296px;
+
+            &_bold {
+                color: #202027;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+
+        &__btn {
+            display: inline-block;
+            width: 285px;
+            height: 55px;
+            border: 1px solid rgb(32, 32, 39);
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 36px;
+            margin-bottom: 131px;
+            font-family: "Montserrat";
+            line-height: 55px;
+        }
+    }
+
+    .description {
+        width: 3220px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(50px);
+        background: rgb(188, 236, 48);
+        flex-wrap: wrap;
+        overflow: hidden;
+        max-height: 87px;
+
+        &__text {
+            font-family: "Montserrat";
+            color: rgb(32, 32, 39);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 110%;
+            text-transform: uppercase;
+            padding-right: 27px;
+            padding-left: 27px;
+        }
+
+        &__star {
+            width: 19px;
+            height: 19px;
+        }
+    }
+
+    .container__games {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+        background: #202027;
+        background-image: url(image/Star1.svg), url(image/Star11.svg), url(image/Star12.svg);
+        background-position: calc(100% + 91px) 24px, calc(100% - 1355px) 700px, calc(100% - 1322px) 754px;
+        background-repeat: no-repeat;
+
+        .games {
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            &__text {
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        .game-cards {
+            max-height: 3740px;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 32px;
+            align-items: start;
+        }
+    }
+}
