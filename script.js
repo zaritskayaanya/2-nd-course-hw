@@ -24,3 +24,7 @@ alert(product); //Вывод
 
 let quotient = 10 / 2; //Частное
 alert(quotient); //Вывод
+
+//ЗАДАНИЕ 5
+let power = 2 ** 5; //2 в 5 степени
+alert(power); //Вывод
