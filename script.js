@@ -26,5 +26,12 @@ let quotient = 10 / 2; //Частное
 alert(quotient); //Вывод
 
 //ЗАДАНИЕ 5
-let power = 2 ** 5; //2 в 5 степени
-alert(power); //Вывод
+let result = 2 ** 5; //2 в 5 степени
+alert(result); //Вывод
+
+//ЗАДАНИЕ 6
+let b = 9;
+let c = 2;
+let remainder = b % c;
+alert(remainder);
+
