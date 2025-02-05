@@ -30,8 +30,17 @@ let result = 2 ** 5; //2 в 5 степени
 alert(result); //Вывод
 
 //ЗАДАНИЕ 6
-let b = 9;
-let c = 2;
-let remainder = b % c;
-alert(remainder);
+let b = 9; // Первая переменная 
+let c = 2; // Вторая переменная
+let remainder = b % c; //Модуль от деления
+alert(remainder); // Вывод
 
+//ЗАДАНИЕ 7 
+let num = 1; //Первая переменная
+num += 5; // 1+5
+num -= 3; // 1-3   
+num *= 7; // 1*7
+num /= 3; // 1/3
+num += 1; // 1+1
+num -= 1; // 1-1
+alert(num); // Вывод
