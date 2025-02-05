@@ -11,6 +11,10 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 article {
     position: relative;
 }
@@ -21,64 +25,63 @@ h4>a::before {
 
 .center {
     padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 650px);
+    padding-right: calc(50% - 600px);
 }
 
 .top {
-    background-color: #E1FF8F;
-    background-image: url(image/Group\ 1597880565.png);
+    background: #E1FF8F;
+    background-image: url(image/star1.png), url(image/star2.png), url(image/starbig.svg);
+    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), calc(230% - 330px);
     background-repeat: no-repeat;
-    background-position: center right;
-    height: 800px;
-
-    &__content {
-        height: 358px;
-        padding-top: 196px;
-        gap: 48px;
-    }
+    overflow: hidden;
 
     &__title {
+        color: #202027;
         font-family: Montserrat;
         font-size: 64px;
+        font-style: normal;
         font-weight: 700;
-        line-height: 78px;
-        text-align: left;
-        color: rgba(32, 32, 39, 1);
-        padding-bottom: 24px;
+        line-height: normal;
+        max-width: 769px;
+        max-height: 358px;
+        padding-top: 196px;
     }
 
     &__text {
+        color: #202027;
         font-family: Montserrat;
         font-size: 24px;
+        font-style: normal;
         font-weight: 400;
         line-height: 32px;
-        text-align: left;
-        padding-bottom: 48px;
+        padding-top: 24px;
+        max-width: 720px;
 
         &_bold {
+            color: #202027;
             font-family: Montserrat;
             font-size: 24px;
+            font-style: normal;
             font-weight: 600;
             line-height: 32px;
-            text-align: left;
         }
     }
 
-    &__button {
+    &__btn {
+        display: inline-block;
         width: 247px;
         height: 66px;
-        padding: 16px 28px 16px 28px;
-        gap: 10px;
+        border: 1px solid rgb(32, 32, 39);
         border-radius: 60px;
-        border: 1px solid #202027;
-        background-color: #202027;
-        font-family: 'Montserrat';
+        background: rgb(32, 32, 39);
+        color: #FFFFFF;
         font-size: 24px;
         font-weight: 600;
-        line-height: 34px;
         text-align: center;
-        color: #FFFFFF;
-        text-decoration: none;
+        margin-top: 48px;
+        margin-bottom: 156px;
+        font-family: "Montserrat";
+        line-height: 62px;
     }
 }
 
@@ -88,91 +91,143 @@ a:hover {
 }
 
 .description {
-    background-color: #202027;
-    background-image: url(image/Star\ 1.png);
-    background-repeat: no-repeat;
-    background-position: 100% 15%;
-
-    &-content {
-        padding-top: 72px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 32px;
-    }
-
-    &__title {
-        font-family: Montserrat;
-        font-size: 64px;
-        font-weight: 700;
-        line-height: 78px;
-        text-align: left;
-        color: #FFFFFF;
-        padding-top: 94px;
-    }
+    width: 3220px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    background: rgb(188, 236, 48);
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-height: 87px;
 
     &__text {
+        font-family: "Montserrat";
+        color: rgb(32, 32, 39);
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-right: 51px;
+        padding-left: 51px;
+    }
+}
+
+.container__games {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    background: #202027;
+    background-image: url("img/Star1.svg"), url("img/Star11.svg"), url("img/Star12.svg");
+    background-position: calc(100% + 91px) 24px, calc(100% + -1355px) 700px, calc(100% + -1322px) 754px;
+    background-repeat: no-repeat;
+}
+
+.games {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 94px;
+
+    &__text {
+        color: #FFF;
         font-family: Montserrat;
         font-size: 24px;
+        font-style: normal;
         font-weight: 400;
         line-height: 32px;
-        text-align: left;
-        color: #FFFFFF;
-        padding-top: 24px;
+        max-width: 788px;
     }
+}
 
-    &-game {
-        width: 378px;
-        height: 512px;
+.game-cards {
+    max-height: 1060px;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 32px;
+    align-items: start;
+}
+
+.game-card {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 4;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    transition: all 1s;
+    text-decoration: none;
+
+    &__image {
         border-radius: 30px;
-        background: #FFFFFF;
+        height: 314px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &_type_1 {
+            background: url(image/card1.svg);
+        }
+
+        &_type_2 {
+            background: url(image/card2.svg);
+        }
+
+        &_type_3 {
+            background: url(image/card3.svg);
+        }
+
+        &_type_4 {
+            background: url(image/card4.svg);
+        }
+
+        &_type_5 {
+            background: url(image/card5.svg);
+        }
+
+        &_type_6 {
+            background: url(image/card6.svg);
+        }
     }
 
-    &-game-big {
-        width: 378px;
-        height: 551px;
-        border-radius: 30px;
-        background: #FFFFFF;
+    &--top {
+        margin-top: -40px;
     }
 
-    &-game-small {
-        width: 378px;
-        height: 473px;
-        border-radius: 30px;
-        background: #FFFFFF;
-    }
-
-    &-img {
-        border-radius: 30px;
-        padding-bottom: 32px;
-    }
-
-    &-form {
-        width: 108px;
+    &__number {
+        width: 111px;
         height: 36px;
-        border-radius: 53px;
-        background: #F7F7F7;
-        font-family: Montserrat;
+        color: rgb(32, 32, 39);
         font-size: 16px;
         font-weight: 500;
-        line-height: 18px;
-        color: #202027;
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left: 32px;
+        margin-top: 13px;
+        margin-left: 32px;
+        margin-bottom: 10px;
     }
 
-    &-text {
-        font-family: Montserrat;
+    &__text {
+        color: rgb(32, 32, 39);
         font-size: 32px;
         font-weight: 700;
-        line-height: 39.01px;
         text-align: left;
-        padding-top: 16px;
-        padding-left: 16px;
-        text-decoration: none;
-        display: flex;
+        padding: 0 38px 32px;
     }
 }
+
+.game-card:hover {
+    transform: scale(1.10);
+}
+
+
+@import 'mobile';
