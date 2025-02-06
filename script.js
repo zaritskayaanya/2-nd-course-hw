@@ -48,3 +48,14 @@ alert(num); // Вывод
 //ЗАДАНИЕ 8
 let age = prompt("Сколько Вам лет?"); //Запрашиваем возраст
 alert(age); // Вывод
+
+//ЗАДАНИЕ 9
+let User = {
+    names: 'Анна',
+    ages: 28,
+    "isAdmin": true
+}
+
+//ЗАДАНИЕ 10
+let surname = prompt("Как Вас зовут?"); //Запрашиваем имя
+alert('Привет, {surname}'); //Вывод
