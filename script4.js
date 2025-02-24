@@ -1,11 +1,14 @@
-let sum = 10 + 2; //Сумма
+let a = 10;
+let b = 2;
+
+let sum = a + b; //Сумма
 alert(sum); //Вывод
 
-let difference = 10 - 2; //Разность
+let difference = a - b; //Разность
 alert(difference); //Вывод
 
-let product = 10 * 2; //Произведение
+let product = a * b; //Произведение
 alert(product); //Вывод
 
-let quotient = 10 / 2; //Частное
+let quotient = a / b; //Частное
 alert(quotient); //Вывод
