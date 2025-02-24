@@ -1,2 +1,2 @@
-let name = "Брендан Эйх"; //Имя создателя языка JavaScript
-alert(name); //Вывод
+let jscreator = "Брендан Эйх"; //Имя создателя языка JavaScript
+alert(jscreator); //Вывод
