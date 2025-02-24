@@ -1,5 +1,5 @@
-let User = {
-    names: 'Анна',
-    ages: 28,
-    "isAdmin": true
+let user = {
+    name: 'Анна',
+    age: 28,
+    isAdmin: true
 }
