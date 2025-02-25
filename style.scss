@@ -91,38 +91,75 @@ a:hover {
 }
 
 .description {
-    width: 3220px;
     height: 90px;
-    display: flex;
-    align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(50px);
-    background: rgb(188, 236, 48);
-    flex-wrap: wrap;
+    background: rgba(188, 236, 48, 1);
     overflow: hidden;
-    max-height: 87px;
 
-    &__text {
-        font-family: "Montserrat";
-        color: rgb(32, 32, 39);
-        font-size: 30px;
-        font-weight: 700;
-        text-transform: uppercase;
-        padding-right: 51px;
-        padding-left: 51px;
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(50px);
+        animation: startLine 15s linear, marquee 15s linear 15s infinite;
+        width: 3220px;
+        padding-top: 27px;
+        padding-right: 49px;
+        padding-left: 49px;
+        padding-bottom: 27px;
+
+
+        &-text {
+            font-family: "Montserrat";
+            color: rgb(32, 32, 39);
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-right: 51px;
+            padding-left: 51px;
+        }
+
+        &-star {
+            width: 19px;
+            height: 19px;
+        }
+    }
+
+    @keyframes startLine {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
     }
 }
 
 .container__games {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    align-self: stretch;
     background: #202027;
     background-image: url("img/Star1.svg"), url("img/Star11.svg"), url("img/Star12.svg");
     background-position: calc(100% + 91px) 24px, calc(100% + -1355px) 700px, calc(100% + -1322px) 754px;
     background-repeat: no-repeat;
+
+    &_about {
+        padding-bottom: 72px;
+        padding-top: 94px;
+
+        &-mob {
+            display: none;
+        }
+    }
 }
 
 .games {
@@ -132,7 +169,7 @@ a:hover {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-top: 94px;
+    padding-bottom: 24px;
 
     &__text {
         color: #FFF;
@@ -223,11 +260,14 @@ a:hover {
         text-align: left;
         padding: 0 38px 32px;
     }
+
+    &__about {
+        display: none;
+    }
 }
 
 .game-card:hover {
     transform: scale(1.10);
 }
-
 
 @import 'mobile';

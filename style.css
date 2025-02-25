@@ -87,19 +87,25 @@ a:hover {
 }
 
 .description {
-  width: 3220px;
   height: 90px;
+  background: rgb(188, 236, 48);
+  overflow: hidden;
+}
+.description__block {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
-  background: rgb(188, 236, 48);
-  flex-wrap: wrap;
-  overflow: hidden;
-  max-height: 87px;
+  animation: startLine 15s linear, marquee 15s linear 15s infinite;
+  width: 3220px;
+  padding-top: 27px;
+  padding-right: 49px;
+  padding-left: 49px;
+  padding-bottom: 27px;
 }
-.description__text {
+.description__block-text {
   font-family: "Montserrat";
   color: rgb(32, 32, 39);
   font-size: 30px;
@@ -108,17 +114,39 @@ a:hover {
   padding-right: 51px;
   padding-left: 51px;
 }
+.description__block-star {
+  width: 19px;
+  height: 19px;
+}
+@keyframes startLine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 
 .container__games {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  align-self: stretch;
   background: #202027;
   background-image: url("img/Star1.svg"), url("img/Star11.svg"), url("img/Star12.svg");
   background-position: calc(100% + 91px) 24px, calc(100% - 1355px) 700px, calc(100% - 1322px) 754px;
   background-repeat: no-repeat;
+}
+.container__games_about {
+  padding-bottom: 72px;
+  padding-top: 94px;
+}
+.container__games_about-mob {
+  display: none;
 }
 
 .games {
@@ -128,7 +156,7 @@ a:hover {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding-top: 94px;
+  padding-bottom: 24px;
 }
 .games__text {
   color: #FFF;
@@ -209,6 +237,9 @@ a:hover {
   text-align: left;
   padding: 0 38px 32px;
 }
+.game-card__about {
+  display: none;
+}
 
 .game-card:hover {
   transform: scale(1.1);
@@ -270,19 +301,27 @@ a:hover {
     line-height: 55px;
   }
   .description {
-    width: 3220px;
     height: 60px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-height: 87px;
+  }
+  .description__block {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.2);
     -webkit-backdrop-filter: blur(50px);
             backdrop-filter: blur(50px);
     background: rgb(188, 236, 48);
-    flex-wrap: wrap;
-    overflow: hidden;
-    max-height: 87px;
+    animation: startLine 15s linear, marquee 15s linear 15s infinite;
+    width: 3220px;
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 16px;
   }
-  .description__text {
+  .description__block-text {
     font-family: "Montserrat";
     color: rgb(32, 32, 39);
     font-size: 16px;
@@ -293,22 +332,17 @@ a:hover {
     padding-right: 27px;
     padding-left: 27px;
   }
-  .description__star {
+  .description__block-star {
     width: 19px;
     height: 19px;
   }
   .container__games {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    align-self: stretch;
     background: #202027;
     background-image: url(image/Star1.svg), url(image/Star11.svg), url(image/Star12.svg);
     background-position: calc(100% + 91px) 24px, calc(100% - 1355px) 700px, calc(100% - 1322px) 754px;
     background-repeat: no-repeat;
   }
-  .container__games .games {
+  .games {
     color: #FFF;
     font-family: Montserrat;
     font-size: 40px;
@@ -316,7 +350,7 @@ a:hover {
     font-weight: 700;
     line-height: normal;
   }
-  .container__games .games__text {
+  .games__text {
     color: #FFF;
     font-family: Montserrat;
     font-size: 16px;
@@ -324,13 +358,29 @@ a:hover {
     font-weight: 400;
     line-height: normal;
   }
-  .container__games .game-cards {
-    max-height: 3740px;
-    max-width: 1200px;
+  .game-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 32px;
+    max-height: 3740px;
+    max-width: 767px;
     align-items: start;
+    gap: 32px;
+  }
+  .game-card {
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    transition: all 1s;
+    text-decoration: none;
+  }
+  .game-card--top {
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+  .game-card__number {
+    display: none;
+  }
+  .game-card__about {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
