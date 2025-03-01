@@ -252,6 +252,10 @@ a:hover {
     padding-left: calc(50% - 383px);
     padding-right: calc(50% - 383px);
   }
+  a:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
   .top {
     background: #E1FF8F;
     background-image: url(image/star1.png), url(image/star2.png), url(image/Vectormob.svg);
