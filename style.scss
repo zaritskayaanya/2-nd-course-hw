@@ -191,6 +191,10 @@ a:hover {
             gap: 32px;
             align-items: start;
         }
+
+        &_mob {
+            display: none;
+        }
     }
 }
 

@@ -4,11 +4,6 @@
         padding-right: calc(50% - 383px);
     }
 
-    a:hover {
-        background-color: #FFFFFF;
-        color: #000000;
-    }
-
     .top {
         background: #E1FF8F;
         background-image: url(image/star1.png), url(image/star2.png), url(image/Vectormob.svg);
@@ -131,14 +126,15 @@
 
             &_about {
                 display: none;
+            }
 
-                &-mob {
-                    font-family: Montserrat;
-                    font-weight: 700;
-                    font-size: 40px;
-                    line-height: 49px;
-                    padding-bottom: 48px;
-                }
+            &_mob {
+                display: inline;
+                font-family: Montserrat;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 49px;
+                padding-bottom: 48px;
             }
 
             &_description {
@@ -151,6 +147,7 @@
                 display: flex;
                 flex-direction: column;
                 flex-wrap: nowrap;
+                padding-top: 48px;
             }
         }
     }
@@ -204,6 +201,7 @@
             line-height: 55px;
             margin-left: 29px;
         }
-    }
 
+
+    }
 }
