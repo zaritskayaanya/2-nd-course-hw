@@ -1,0 +1,25 @@
+@media (max-width:1024px) {
+    .center {
+        padding-left: 119px;
+        padding-right: 120px;
+    }
+
+    .top {
+        background: #E1FF8F;
+        background-image: url(image/star1.png), url(image/star2.png), url(image/Vectormob.svg);
+        background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 100% 0px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .game-cards {
+        max-height: 1060px;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 32px;
+        align-items: start;
+    }
+
+}

@@ -12,92 +12,110 @@
 
 <body>
     <section class="top center">
-        <p class="top__title">Добро пожаловать на мой сайт мини-игр</p>
-        <p class="top__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span
-                class="top__text_bold">«Поехали!»</span> и <span class="top__text_bold">приступай.</span></p>
-        <a class="top__btn" href="#aboutgames">Поехали!</a>
+        <div class="top__game">
+            <p class="top__game_title">Добро пожаловать на мой сайт мини-игр</p>
+            <p class="top__game_text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span
+                    class="top__game_text-bold">«Поехали!»</span> и <span class="top__game_text-bold">приступай.</span>
+            </p>
+            <a class="top__game_btn" href="#aboutgames">Поехали!</a>
+        </div>
     </section>
-    <section class="description center">
-        <div class="description__block">
-            <div class="description__block-text">Викторина</div>
-            <svg class="description__block-star" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+    <section class="top__description">
+        <div class="top__description_block">
+            <div class="top__description_block-text">Викторина</div>
+            <svg class="top__description_block-star" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
                 viewBox="0 0 36 36" fill="none">
                 <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z"
                     fill="#202027" />
             </svg>
-            <div class="description__block-text">угадай число</div>
-            <svg class="description__block-star" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+            <div class="top__description_block-text">угадай число</div>
+            <svg class="top__description_block-star" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
                 viewBox="0 0 36 36" fill="none">
                 <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z"
                     fill="#202027" />
             </svg>
-            <div class="description__block-text">Переверни текст</div>
-            <svg class="description__block-star" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+            <div class="top__description_block-text">Переверни текст</div>
+            <svg class="top__description_block-star" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
                 viewBox="0 0 36 36" fill="none">
                 <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z"
                     fill="#202027" />
             </svg>
-            <div class="description__block-text">Простая арифметика</div>
-            <svg class="description__block-star" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+            <div class="top__description_block-text">Простая арифметика</div>
+            <svg class="top__description_block-star" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
                 viewBox="0 0 36 36" fill="none">
                 <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z"
                     fill="#202027" />
             </svg>
-            <div class="description__block-text">Камень, ножницы, бумага</div>
-            <svg class="description__block-star" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+            <div class="top__description_block-text">Камень, ножницы, бумага</div>
+            <svg class="top__description_block-star" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
                 viewBox="0 0 36 36" fill="none">
                 <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z"
                     fill="#202027" />
             </svg>
-            <div class="description__block-text">Генератор случайных цветов</div>
-            <svg class="description__block-star" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+            <div class="top__description_block-text">Генератор случайных цветов</div>
+            <svg class="top__description_block-star" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
                 viewBox="0 0 36 36" fill="none">
                 <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z"
                     fill="#202027" />
             </svg>
         </div>
     </section>
-    <section class="container__games center">
-        <div class="container__games_about">
-            <h2 class="games" id="aboutgames">Об играх</h2>
-            <p class="games__text">В моей коллекции представлено 6 игр на разные темы. <br>
+    <section class="container center">
+        <div class="container__games">
+            <h2 class="container__games_about">Об играх
+            </h2>
+            <h3 class="container__games_about-mob">Мини-игры</h3>
+            <p class="container__games_description">В моей коллекции представлено 6 игр на разные темы. <br>
                 Игры несложные — в них может поиграть каждый. <br>
-                Все игры доступны для пользования.</p>
+                Все игры доступны для пользования.
+            </p>
+            <div class="container__games-card">
+                <a class="game-card" href="#">
+                    <div class="game-card__image game-card__image_type_1"></div>
+                    <article class="game-card__number">Игра № 1</article>
+                    <h4 class="game-card__text">Угадай число</h4>
+                    <p class="game-card__about">Попробуй угадать случайное число от 1 до 100.</p>
+                    <button class="game-card__btn">Играть!</button>
+                </a>
+                <a class="game-card" href="#">
+                    <div class="game-card__image game-card__image_type_2"></div>
+                    <article class="game-card__number">Игра № 2</article>
+                    <h4 class="game-card__text">Простая арифметика</h4>
+                    <p class="game-card__about">Попробуй решить простые арифметические задачи.</p>
+                    <button class="game-card__btn">Играть!</button>
+                </a>
+                <a class="game-card" href="#">
+                    <div class="game-card__image game-card__image_type_3"></div>
+                    <article class="game-card__number">Игра № 3</article>
+                    <h4 class="game-card__text">Переверни текст</h4>
+                    <p class="game-card__about">Попробуй решить простые арифметические задачи.Попробуй ввести текст,
+                        который будет перевернут.</p>
+                    <button class="game-card__btn">Играть!</button>
+                </a>
+                <a class="game-card game-card--top" href="#">
+                    <div class="game-card__image game-card__image_type_4"></div>
+                    <article class="game-card__number">Игра № 4</article>
+                    <h4 class="game-card__text">Камень, ножницы, бумага</h4>
+                    <p class="game-card__about">Сыграй в популярную игру против компьютера.</p>
+                    <button class="game-card__btn">Играть!</button>
+                </a>
+                <a class="game-card" href="#">
+                    <div class="game-card__image game-card__image_type_5"></div>
+                    <article class="game-card__number">Игра № 5</article>
+                    <h4 class="game-card__text">Простая викторина</h4>
+                    <p class="game-card__about">Отвечай на вопросы викторины с вариантами ответов.</p>
+                    <button class="game-card__btn">Играть!</button>
+                </a>
+                <a class="game-card game-card--top" href="#">
+                    <div class="game-card__image game-card__image_type_6"></div>
+                    <article class="game-card__number">Игра № 6</article>
+                    <h4 class="game-card__text">Генератор случайных цветов</h4>
+                    <p class="game-card__about">Игра, в которой при клике на кнопку фон страницы меняется на случайный.
+                    </p>
+                    <button class="game-card__btn">Играть!</button>
+                </a>
+            </div>
         </div>
-        <div class="game-cards">
-            <a class="game-card" href="#">
-                <div class="game-card__image game-card__image_type_1"></div>
-                <div class="game-card__number">Игра № 1</div>
-                <div class="game-card__text">Угадай число</div>
-                <div class="game-card__about">Попробуй угадать случайное число от 1 до 100.</div>
-            </a>
-            <a class="game-card" href="#">
-                <div class="game-card__image game-card__image_type_2"></div>
-                <div class="game-card__number">Игра № 2</div>
-                <div class="game-card__text">Простая арифметика</div>
-            </a>
-            <a class="game-card" href="#">
-                <div class="game-card__image game-card__image_type_3"></div>
-                <div class="game-card__number">Игра № 3</div>
-                <div class="game-card__text">Переверни текст</div>
-            </a>
-            <a class="game-card game-card--top" href="#">
-                <div class="game-card__image game-card__image_type_4"></div>
-                <div class="game-card__number">Игра № 4</div>
-                <div class="game-card__text">Камень, ножницы, бумага</div>
-            </a>
-            <a class="game-card" href="#">
-                <div class="game-card__image game-card__image_type_5"></div>
-                <div class="game-card__number">Игра № 5</div>
-                <div class="game-card__text">Простая викторина</div>
-            </a>
-            <a class="game-card game-card--top" href="#">
-                <div class="game-card__image game-card__image_type_6"></div>
-                <div class="game-card__number">Игра № 6</div>
-                <div class="game-card__text">Генератор случайных цветов</div>
-            </a>
-        </div>
-
     </section>
     <script src="script10.js"></script>
 </body>
