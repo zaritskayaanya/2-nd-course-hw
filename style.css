@@ -176,6 +176,9 @@ a:hover {
   gap: 32px;
   align-items: start;
 }
+.container__games_mob {
+  display: none;
+}
 
 .game-card {
   display: flex;
@@ -251,10 +254,6 @@ a:hover {
   .center {
     padding-left: calc(50% - 383px);
     padding-right: calc(50% - 383px);
-  }
-  a:hover {
-    background-color: #FFFFFF;
-    color: #000000;
   }
   .top {
     background: #E1FF8F;
@@ -370,7 +369,8 @@ a:hover {
   .container__games_about {
     display: none;
   }
-  .container__games_about-mob {
+  .container__games_mob {
+    display: inline;
     font-family: Montserrat;
     font-weight: 700;
     font-size: 40px;
@@ -386,6 +386,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    padding-top: 48px;
   }
   .game-card {
     background-color: #FFFFFF;
