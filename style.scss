@@ -172,7 +172,7 @@ a:hover {
         }
 
         &_description {
-            color: #FFF;
+            color: #FFFFFF;
             font-family: Montserrat;
             font-size: 24px;
             font-style: normal;
@@ -278,6 +278,26 @@ a:hover {
 
 .game-card:hover {
     transform: scale(1.10);
+}
+
+.mini {
+    background: #202027;
+    background-image: url("image/Star1.svg"), url("image/Star11.svg"), url("image/Star12.svg");
+    background-position: calc(100% + 91px) 24px, calc(100% + -1355px) 700px, calc(100% + -1322px) 754px;
+    background-repeat: no-repeat;
+
+    &__games {
+        padding-bottom: 72px;
+        padding-top: 94px;
+
+        &_title {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 78.02px;
+            color: #FFFFFF;
+        }
+    }
 }
 
 @import 'mobile';

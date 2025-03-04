@@ -250,6 +250,13 @@ a:hover {
   transform: scale(1.1);
 }
 
+.mini-games{
+  background: #202027;
+  background-image: url("image/Star1.svg"), url("image/Star11.svg"), url("image/Star12.svg");
+  background-position: calc(100% + 91px) 24px, calc(100% + -1355px) 700px, calc(100% + -1322px) 754px;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: calc(50% - 383px);
