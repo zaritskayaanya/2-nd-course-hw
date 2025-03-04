@@ -158,7 +158,6 @@ a:hover {
     background-repeat: no-repeat;
 
     &__games {
-        padding-bottom: 72px;
         padding-top: 94px;
 
         &_about {
@@ -288,7 +287,6 @@ a:hover {
 
     &__games {
         padding-bottom: 72px;
-        padding-top: 94px;
 
         &_title {
             font-family: Montserrat;
@@ -296,7 +294,76 @@ a:hover {
             font-size: 64px;
             line-height: 78.02px;
             color: #FFFFFF;
+            margin-bottom: 72px;
         }
+
+        &_card {
+            
+            &-catalogy {
+                background: #FFFFFF;
+                border-radius: 30px;
+                display: flex;
+                height: 500px;
+                margin-bottom: 32px;
+            }
+
+            &-catalogyleft {
+                padding-top: 48px;
+                width: 600px;
+                padding-left: 48px;
+            }
+        }
+
+        &_text {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 58.51px;
+            padding-bottom: 24px;
+        }
+
+        &_about {
+            font-family: Montserrat;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            padding-bottom: 36px;
+            width: 457px;
+        }
+
+        &_btn{
+            cursor: pointer;
+            display: inline-block;
+            width: 247px;
+            height: 66px;
+            border: 1px solid rgb(32, 32, 39);
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+            color: #FFFFFF;
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 34.01px;
+            text-align: center;
+        }
+
+        &_img {
+            height: 500px;
+        }
+    }
+}
+
+.footer{
+    height: 150px;
+    background: #BDED35;
+
+    &_text{
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29.26px;
+        text-align: center;
+        padding-top: 61px;
     }
 }
 
