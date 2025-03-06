@@ -15,7 +15,11 @@ button {
     cursor: pointer;
 }
 
-article {
+a {
+    background-color: #FFFFFF;
+}
+
+h4 {
     position: relative;
 }
 
@@ -127,8 +131,7 @@ h4>a::before {
 }
 
 a:hover {
-    background-color: #fff;
-    color: #000;
+    color: #000000;
 }
 
 @keyframes startLine {
