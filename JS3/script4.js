@@ -1,4 +1,4 @@
 let a = '2';
 let b = '3';
 // Код выше изменять менять нельзя. Чтобы решить задачу исправьте код ниже:
-alert(number(a) + number(b));
+alert(Number(a) + Number(b));
