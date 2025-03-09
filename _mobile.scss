@@ -148,6 +148,7 @@
                 flex-direction: column;
                 flex-wrap: nowrap;
                 padding-top: 48px;
+                padding-bottom: 49px;
             }
         }
     }
@@ -203,5 +204,17 @@
         }
 
 
+    }
+
+    .mini {
+        display: none;
+    }
+
+    .footer {
+        height: 100px;
+
+        &_text {
+            padding-top: 40px;
+        }
     }
 }

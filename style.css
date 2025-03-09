@@ -468,6 +468,7 @@ a:hover {
     flex-direction: column;
     flex-wrap: nowrap;
     padding-top: 48px;
+    padding-bottom: 49px;
   }
   .game-card {
     background-color: #FFFFFF;
@@ -513,5 +514,14 @@ a:hover {
     font-family: "Montserrat";
     line-height: 55px;
     margin-left: 29px;
+  }
+  .mini {
+    display: none;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer_text {
+    padding-top: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
