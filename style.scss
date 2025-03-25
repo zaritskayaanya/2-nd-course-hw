@@ -193,11 +193,7 @@ a:hover {
             grid-template-rows: repeat(3, 1fr);
             gap: 32px;
             align-items: start;
-        }
-
-        &_mob {
-            display: none;
-        }
+        }    
     }
 }
 
@@ -309,6 +305,15 @@ a:hover {
                 display: flex;
                 height: 500px;
                 margin-bottom: 32px;
+
+                &-reverse{
+                    background: #FFFFFF;
+                    border-radius: 30px;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    height: 500px;
+                    margin-bottom: 32px;
+                }
             }
 
             &-catalogyleft {
