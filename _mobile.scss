@@ -6,10 +6,9 @@
 
     .top {
         background: #E1FF8F;
-        background-image: url(image/star1.png), url(image/star2.png), url(image/Vectormob.svg);
-        background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 100% 0px;
-        background-repeat: no-repeat;
-        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        height: 649px;
 
         &__game {
             width: 343px;
@@ -63,7 +62,6 @@
                 font-size: 16px;
                 font-weight: 600;
                 text-align: center;
-                margin-top: 36px;
                 margin-bottom: 131px;
                 font-family: "Montserrat";
                 line-height: 55px;
@@ -71,7 +69,7 @@
         }
 
         &__description {
-            height: 60px;
+            height: 51px;
             overflow: hidden;
             display: flex;
             flex-direction: column;
@@ -79,7 +77,7 @@
             flex-wrap: nowrap;
             justify-content: center;
 
-            &__block {
+            &_block {
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;

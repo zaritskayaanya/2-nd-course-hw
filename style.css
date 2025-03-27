@@ -343,10 +343,9 @@ a:hover {
   }
   .top {
     background: #E1FF8F;
-    background-image: url(image/star1.png), url(image/star2.png), url(image/Vectormob.svg);
-    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 100% 0px;
-    background-repeat: no-repeat;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 649px;
   }
   .top__game {
     width: 343px;
@@ -397,13 +396,12 @@ a:hover {
     font-size: 16px;
     font-weight: 600;
     text-align: center;
-    margin-top: 36px;
     margin-bottom: 131px;
     font-family: "Montserrat";
     line-height: 55px;
   }
   .top__description {
-    height: 60px;
+    height: 51px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -411,7 +409,7 @@ a:hover {
     flex-wrap: nowrap;
     justify-content: center;
   }
-  .top__description__block {
+  .top__description_block {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -426,7 +424,7 @@ a:hover {
     padding-left: 24px;
     padding-bottom: 16px;
   }
-  .top__description__block-text {
+  .top__description_block-text {
     font-family: "Montserrat";
     color: rgb(32, 32, 39);
     font-size: 16px;
@@ -437,7 +435,7 @@ a:hover {
     padding-right: 27px;
     padding-left: 27px;
   }
-  .top__description__block-star {
+  .top__description_block-star {
     width: 19px;
     height: 19px;
   }
