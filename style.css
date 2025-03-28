@@ -179,9 +179,6 @@ a:hover {
   gap: 32px;
   align-items: start;
 }
-.container__games_mob {
-  display: none;
-}
 
 .game-card {
   display: flex;
@@ -277,6 +274,14 @@ a:hover {
   height: 500px;
   margin-bottom: 32px;
 }
+.mini__games_card-catalogy-reverse {
+  background: #FFFFFF;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 500px;
+  margin-bottom: 32px;
+}
 .mini__games_card-catalogyleft {
   padding-top: 48px;
   width: 600px;
@@ -321,14 +326,14 @@ a:hover {
 .footer {
   height: 150px;
   background: #BDED35;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer_text {
   font-family: Montserrat;
   font-weight: 600;
   font-size: 24px;
-  line-height: 29.26px;
-  text-align: center;
-  padding-top: 61px;
 }
 
 @media (max-width: 767px) {
@@ -338,16 +343,19 @@ a:hover {
   }
   .top {
     background: #E1FF8F;
-    background-image: url(image/star1.png), url(image/star2.png), url(image/Vectormob.svg);
-    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 100% 0px;
-    background-repeat: no-repeat;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 649px;
   }
   .top__game {
     width: 343px;
     height: 371px;
     padding-left: 17px;
     padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 147px;
   }
   .top__game_title {
     color: #202027;
@@ -357,6 +365,7 @@ a:hover {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    max-width: 262px;
   }
   .top__game_text {
     color: #202027;
@@ -367,7 +376,6 @@ a:hover {
     font-weight: 400;
     line-height: normal;
     max-width: 296px;
-    padding-left: 23px;
   }
   .top__game_text-bold {
     color: #202027;
@@ -388,19 +396,20 @@ a:hover {
     font-size: 16px;
     font-weight: 600;
     text-align: center;
-    margin-top: 36px;
     margin-bottom: 131px;
     font-family: "Montserrat";
     line-height: 55px;
-    margin-left: 29px;
   }
   .top__description {
-    height: 60px;
-    flex-wrap: wrap;
+    height: 51px;
     overflow: hidden;
-    max-height: 87px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
-  .top__description__block {
+  .top__description_block {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -415,7 +424,7 @@ a:hover {
     padding-left: 24px;
     padding-bottom: 16px;
   }
-  .top__description__block-text {
+  .top__description_block-text {
     font-family: "Montserrat";
     color: rgb(32, 32, 39);
     font-size: 16px;
@@ -426,7 +435,7 @@ a:hover {
     padding-right: 27px;
     padding-left: 27px;
   }
-  .top__description__block-star {
+  .top__description_block-star {
     width: 19px;
     height: 19px;
   }
@@ -435,6 +444,7 @@ a:hover {
     background-image: url(image/Star1.svg), url(image/Star11.svg), url(image/Star12.svg);
     background-position: calc(100% + 91px) 24px, calc(100% - 1355px) 700px, calc(100% - 1322px) 754px;
     background-repeat: no-repeat;
+    display: none;
   }
   .container__games {
     color: #FFF;
@@ -449,14 +459,6 @@ a:hover {
   }
   .container__games_about {
     display: none;
-  }
-  .container__games_mob {
-    display: inline;
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 49px;
-    padding-bottom: 48px;
   }
   .container__games_description {
     display: none;
@@ -513,5 +515,100 @@ a:hover {
     font-family: "Montserrat";
     line-height: 55px;
     margin-left: 29px;
+  }
+  .mini {
+    background: #202027;
+    height: 3740px;
+  }
+  .mini__games {
+    width: 343px;
+  }
+  .mini__games_title {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    vertical-align: middle;
+    color: #FFFFFF;
+    padding-top: 48px;
+    padding-left: 16px;
+  }
+  .mini__games_card {
+    width: 343px;
+    padding-left: 16px;
+    padding-bottom: 49px;
+  }
+  .mini__games_card-catalogy {
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    height: 529px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding-bottom: 32px;
+  }
+  .mini__games_card-catalogy-reverse {
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    height: 529px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding-bottom: 32px;
+  }
+  .mini__games_card-catalogyleft {
+    padding-top: 29px;
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+  .mini__games_text {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    vertical-align: middle;
+    width: 285px;
+    padding-bottom: 16px;
+  }
+  .mini__games_about {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    vertical-align: middle;
+    width: 249px;
+    padding-bottom: 32px;
+  }
+  .mini__games_btn {
+    cursor: pointer;
+    width: 285px;
+    height: 40px;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration: none;
+  }
+  .mini__games_img {
+    height: auto;
+  }
+  .footer {
+    height: 100px;
+    background: #BDED35;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_text {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

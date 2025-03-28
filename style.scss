@@ -112,7 +112,6 @@ h4>a::before {
             padding-left: 49px;
             padding-bottom: 27px;
 
-
             &-text {
                 font-family: "Montserrat";
                 color: rgb(32, 32, 39);
@@ -193,11 +192,7 @@ a:hover {
             grid-template-rows: repeat(3, 1fr);
             gap: 32px;
             align-items: start;
-        }
-
-        &_mob {
-            display: none;
-        }
+        }    
     }
 }
 
@@ -309,6 +304,15 @@ a:hover {
                 display: flex;
                 height: 500px;
                 margin-bottom: 32px;
+
+                &-reverse{
+                    background: #FFFFFF;
+                    border-radius: 30px;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    height: 500px;
+                    margin-bottom: 32px;
+                }
             }
 
             &-catalogyleft {
@@ -362,14 +366,14 @@ a:hover {
 .footer{
     height: 150px;
     background: #BDED35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &_text{
         font-family: Montserrat;
         font-weight: 600;
         font-size: 24px;
-        line-height: 29.26px;
-        text-align: center;
-        padding-top: 61px;
     }
 }
 
