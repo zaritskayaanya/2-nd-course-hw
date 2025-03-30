@@ -305,6 +305,12 @@ a:hover {
                 height: 500px;
                 margin-bottom: 32px;
 
+                &-left {
+                    padding-top: 48px;
+                    width: 600px;
+                    padding-left: 48px;
+                }
+
                 &-reverse{
                     background: #FFFFFF;
                     border-radius: 30px;
@@ -312,13 +318,13 @@ a:hover {
                     flex-direction: row-reverse;
                     height: 500px;
                     margin-bottom: 32px;
-                }
-            }
 
-            &-catalogyleft {
-                padding-top: 48px;
-                width: 600px;
-                padding-left: 48px;
+                    &-left{
+                        padding-top: 48px;
+                        width: 600px;
+                        padding-left: 48px;
+                    }
+                }
             }
         }
 
