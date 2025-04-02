@@ -206,7 +206,7 @@
         &__games{
             width: 343px;
 
-            &_title{
+            &-title{
                 font-family: Montserrat;
                 font-weight: 700;
                 font-size: 40px;
@@ -217,7 +217,7 @@
                 padding-left: 16px;
             }
 
-            &_card{
+            &-card{
                 width: 343px;
                 padding-left: 16px;
                 padding-bottom: 49px;
@@ -231,6 +231,55 @@
                     justify-content: space-between;
                     padding-bottom: 32px;
 
+                    &-left{
+                        padding-top: 29px;
+                        padding-left: 29px;
+                        padding-right: 29px;
+
+                        &-text{
+                            font-family: Montserrat;
+                            font-weight: 700;
+                            font-size: 32px;
+                            line-height: 100%;
+                            vertical-align: middle;
+                            width: 285px;
+                            padding-bottom: 16px;
+                        }
+
+                        &-about{
+                            font-family: Montserrat;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 100%;
+                            vertical-align: middle;
+                            width: 249px;
+                            padding-bottom: 32px;
+                        }
+
+                        &-btn{
+                            cursor: pointer;
+                            width: 285px;
+                            height: 40px;
+                            border: 1px solid rgb(32, 32, 39);
+                            border-radius: 60px;
+                            background: rgb(32, 32, 39);
+                            color: #FFFFFF;
+                            font-family: Montserrat;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 142%;
+                            letter-spacing: 0%;
+                            text-align: center;
+                            text-decoration: none;
+                        }
+                    }
+
+                    &-right{
+                        &-img{
+                            height: auto;
+                        }
+                    }
+
                     &-reverse{
                         background: #FFFFFF;
                         border-radius: 30px;
@@ -239,56 +288,58 @@
                         flex-direction: column-reverse;
                         justify-content: space-between;
                         padding-bottom: 32px;
+
+                        &-left{
+                            padding-top: 29px;
+                            padding-left: 29px;
+                            padding-right: 29px;
+
+                            &-text{
+                                font-family: Montserrat;
+                                font-weight: 700;
+                                font-size: 32px;
+                                line-height: 100%;
+                                vertical-align: middle;
+                                width: 285px;
+                                padding-bottom: 16px;
+                            }
+
+                            &-about{
+                                font-family: Montserrat;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 100%;
+                                vertical-align: middle;
+                                width: 249px;
+                                padding-bottom: 32px;
+                            }
+
+                            &-btn{
+                                cursor: pointer;
+                                width: 285px;
+                                height: 40px;
+                                border: 1px solid rgb(32, 32, 39);
+                                border-radius: 60px;
+                                background: rgb(32, 32, 39);
+                                color: #FFFFFF;
+                                font-family: Montserrat;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 142%;
+                                letter-spacing: 0%;
+                                text-align: center;
+                                text-decoration: none;
+                            }
+                        }
+
+                        &-right{
+                            &-img{
+                                height: auto;
+                            }
+                        }
                     }
                 }
-
-                &-catalogyleft{
-                    padding-top: 29px;
-                    padding-left: 29px;
-                    padding-right: 29px;
-                }
-            }
-
-            &_text{
-                font-family: Montserrat;
-                font-weight: 700;
-                font-size: 32px;
-                line-height: 100%;
-                vertical-align: middle;
-                width: 285px;
-                padding-bottom: 16px;
-            }
-
-            &_about{
-                font-family: Montserrat;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 100%;
-                vertical-align: middle;
-                width: 249px;
-                padding-bottom: 32px;
-            }
-
-            &_btn{
-                cursor: pointer;
-                width: 285px;
-                height: 40px;
-                border: 1px solid rgb(32, 32, 39);
-                border-radius: 60px;
-                background: rgb(32, 32, 39);
-                color: #FFFFFF;
-                font-family: Montserrat;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 142%;
-                letter-spacing: 0%;
-                text-align: center;
-                text-decoration: none;
-            }
-
-            &_img{
-                height: auto;
-            }
+            }   
         }
     }
 

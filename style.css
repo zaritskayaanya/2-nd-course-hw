@@ -259,7 +259,7 @@ a:hover {
 .mini__games {
   padding-bottom: 72px;
 }
-.mini__games_title {
+.mini__games-title {
   font-family: Montserrat;
   font-weight: 700;
   font-size: 64px;
@@ -267,39 +267,26 @@ a:hover {
   color: #FFFFFF;
   margin-bottom: 72px;
 }
-.mini__games_card-catalogy {
+.mini__games-card-catalogy {
   background: #FFFFFF;
   border-radius: 30px;
   display: flex;
   height: 500px;
   margin-bottom: 32px;
 }
-.mini__games_card-catalogy-left {
+.mini__games-card-catalogy-left {
   padding-top: 48px;
   width: 600px;
   padding-left: 48px;
 }
-.mini__games_card-catalogy-reverse {
-  background: #FFFFFF;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: row-reverse;
-  height: 500px;
-  margin-bottom: 32px;
-}
-.mini__games_card-catalogy-reverse-left {
-  padding-top: 48px;
-  width: 600px;
-  padding-left: 48px;
-}
-.mini__games_text {
+.mini__games-card-catalogy-left-text {
   font-family: Montserrat;
   font-weight: 700;
   font-size: 48px;
   line-height: 58.51px;
   padding-bottom: 24px;
 }
-.mini__games_about {
+.mini__games-card-catalogy-left-about {
   font-family: Montserrat;
   font-weight: 400;
   font-size: 24px;
@@ -307,7 +294,7 @@ a:hover {
   padding-bottom: 36px;
   width: 457px;
 }
-.mini__games_btn {
+.mini__games-card-catalogy-left-btn {
   cursor: pointer;
   display: inline-block;
   width: 247px;
@@ -323,7 +310,54 @@ a:hover {
   text-align: center;
   text-decoration: none;
 }
-.mini__games_img {
+.mini__games-card-catalogy-right-img {
+  height: 500px;
+}
+.mini__games-card-catalogy-reverse {
+  background: #FFFFFF;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 500px;
+  margin-bottom: 32px;
+}
+.mini__games-card-catalogy-reverse-left {
+  padding-top: 48px;
+  width: 600px;
+  padding-left: 48px;
+}
+.mini__games-card-catalogy-reverse-left-text {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58.51px;
+  padding-bottom: 24px;
+}
+.mini__games-card-catalogy-reverse-left-about {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  padding-bottom: 36px;
+  width: 457px;
+}
+.mini__games-card-catalogy-reverse-left-btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 247px;
+  height: 66px;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 45px;
+  text-align: center;
+  text-decoration: none;
+}
+.mini__games-card-catalogy-reverse-right-img {
   height: 500px;
 }
 
@@ -527,7 +561,7 @@ a:hover {
   .mini__games {
     width: 343px;
   }
-  .mini__games_title {
+  .mini__games-title {
     font-family: Montserrat;
     font-weight: 700;
     font-size: 40px;
@@ -537,12 +571,12 @@ a:hover {
     padding-top: 48px;
     padding-left: 16px;
   }
-  .mini__games_card {
+  .mini__games-card {
     width: 343px;
     padding-left: 16px;
     padding-bottom: 49px;
   }
-  .mini__games_card-catalogy {
+  .mini__games-card-catalogy {
     background: #FFFFFF;
     border-radius: 30px;
     display: flex;
@@ -551,21 +585,12 @@ a:hover {
     justify-content: space-between;
     padding-bottom: 32px;
   }
-  .mini__games_card-catalogy-reverse {
-    background: #FFFFFF;
-    border-radius: 30px;
-    display: flex;
-    height: 529px;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    padding-bottom: 32px;
-  }
-  .mini__games_card-catalogyleft {
+  .mini__games-card-catalogy-left {
     padding-top: 29px;
     padding-left: 29px;
     padding-right: 29px;
   }
-  .mini__games_text {
+  .mini__games-card-catalogy-left-text {
     font-family: Montserrat;
     font-weight: 700;
     font-size: 32px;
@@ -574,7 +599,7 @@ a:hover {
     width: 285px;
     padding-bottom: 16px;
   }
-  .mini__games_about {
+  .mini__games-card-catalogy-left-about {
     font-family: Montserrat;
     font-weight: 400;
     font-size: 16px;
@@ -583,7 +608,7 @@ a:hover {
     width: 249px;
     padding-bottom: 32px;
   }
-  .mini__games_btn {
+  .mini__games-card-catalogy-left-btn {
     cursor: pointer;
     width: 285px;
     height: 40px;
@@ -599,7 +624,58 @@ a:hover {
     text-align: center;
     text-decoration: none;
   }
-  .mini__games_img {
+  .mini__games-card-catalogy-right-img {
+    height: auto;
+  }
+  .mini__games-card-catalogy-reverse {
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    height: 529px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding-bottom: 32px;
+  }
+  .mini__games-card-catalogy-reverse-left {
+    padding-top: 29px;
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+  .mini__games-card-catalogy-reverse-left-text {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    vertical-align: middle;
+    width: 285px;
+    padding-bottom: 16px;
+  }
+  .mini__games-card-catalogy-reverse-left-about {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    vertical-align: middle;
+    width: 249px;
+    padding-bottom: 32px;
+  }
+  .mini__games-card-catalogy-reverse-left-btn {
+    cursor: pointer;
+    width: 285px;
+    height: 40px;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration: none;
+  }
+  .mini__games-card-catalogy-reverse-right-img {
     height: auto;
   }
   .footer {
