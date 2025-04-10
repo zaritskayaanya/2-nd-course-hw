@@ -199,96 +199,63 @@
         }
     }
 
-    .mini{
-        background: #202027;
-        height: 3740px;
+    .mini-games {
+        background-image: none;
+        padding-bottom: 48px;
+        
+        &__title {
+            font-size: 40px;
+            line-height: 49px;
+            padding-top: 48px;
+            padding-bottom: 48px;
+            padding-left: 16px;
+        }
 
-        &__games{
+        &__content {
+            gap: 24px;
             width: 343px;
+            padding-left: 16px;
+        }
+        
+        &__img {
+            width: 343px;
+            height: 284px;
+        }
 
-            &_title{
-                font-family: Montserrat;
-                font-weight: 700;
-                font-size: 40px;
-                line-height: 100%;
-                vertical-align: middle;
-                color: #FFFFFF;
-                padding-top: 48px;
-                padding-left: 16px;
-            }
+        &__description {
+            padding: 29px;
+        }
 
-            &_card{
-                width: 343px;
-                padding-left: 16px;
-                padding-bottom: 49px;
+        &__product {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 100%;
+            vertical-align: middle;
+            padding-bottom: 16px;
+        }
 
-                &-catalogy{
-                    background: #FFFFFF;
-                    border-radius: 30px;
-                    display: flex;
-                    height: 529px;
-                    flex-direction: column-reverse;
-                    justify-content: space-between;
-                    padding-bottom: 32px;
+        &__text {
+            font-family: Montserrat;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            vertical-align: middle;
+            padding-bottom: 32px;
+        }
 
-                    &-reverse{
-                        background: #FFFFFF;
-                        border-radius: 30px;
-                        display: flex;
-                        height: 529px;
-                        flex-direction: column-reverse;
-                        justify-content: space-between;
-                        padding-bottom: 32px;
-                    }
-                }
+        &__btn {
+            padding: 16px 110px;
+            font-size: 16px;
+        }
+    }
 
-                &-catalogyleft{
-                    padding-top: 29px;
-                    padding-left: 29px;
-                    padding-right: 29px;
-                }
-            }
+    .mini-game {
+        display: block;
+        height: 568px;
 
-            &_text{
-                font-family: Montserrat;
-                font-weight: 700;
-                font-size: 32px;
-                line-height: 100%;
-                vertical-align: middle;
-                width: 285px;
-                padding-bottom: 16px;
-            }
-
-            &_about{
-                font-family: Montserrat;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 100%;
-                vertical-align: middle;
-                width: 249px;
-                padding-bottom: 32px;
-            }
-
-            &_btn{
-                cursor: pointer;
-                width: 285px;
-                height: 40px;
-                border: 1px solid rgb(32, 32, 39);
-                border-radius: 60px;
-                background: rgb(32, 32, 39);
-                color: #FFFFFF;
-                font-family: Montserrat;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 142%;
-                letter-spacing: 0%;
-                text-align: center;
-                text-decoration: none;
-            }
-
-            &_img{
-                height: auto;
-            }
+        &_reverse{
+            height: 529px;
         }
     }
 

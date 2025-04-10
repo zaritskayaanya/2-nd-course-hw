@@ -213,27 +213,27 @@ a:hover {
         background-position: center;
 
         &_type_1 {
-            background: url(image/card1.svg);
+            background: url(image/Card1.png);
         }
 
         &_type_2 {
-            background: url(image/card2.svg);
+            background: url(image/Card2.png);
         }
 
         &_type_3 {
-            background: url(image/card3.svg);
+            background: url(image/Card3.png);
         }
 
         &_type_4 {
-            background: url(image/card4.svg);
+            background: url(image/Card4.png);
         }
 
         &_type_5 {
-            background: url(image/card5.svg);
+            background: url(image/Card5.png);
         }
 
         &_type_6 {
-            background: url(image/card6.svg);
+            background: url(image/Card6.png);
         }
     }
 
@@ -252,9 +252,9 @@ a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 13px;
+        margin-top: 32px;
         margin-left: 32px;
-        margin-bottom: 10px;
+        margin-bottom: 16px;
     }
 
     &__text {
@@ -278,88 +278,84 @@ a:hover {
     transform: scale(1.10);
 }
 
-.mini {
+.mini-games{
     background: #202027;
-    background-image: url("image/Star1.svg"), url("image/Star11.svg"), url("image/Star12.svg");
-    background-position: calc(100% + 91px) 24px, calc(100% + -1355px) 700px, calc(100% + -1322px) 754px;
+    background-image: url(./image/Star6.svg), url(./image/Star7.svg), url(./image/Star8.svg), url(./image/Star10.svg);
     background-repeat: no-repeat;
+    background-position: 1320px 126px, 1277px 93px, 1319px 3366px, 1249px 3414px;
+    padding-bottom: 144px;
 
-    &__games {
-        padding-bottom: 72px;
+    &__title{
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        padding-top: 46px;
+        padding-bottom: 76px;
+    }
 
-        &_title {
-            font-family: Montserrat;
-            font-weight: 700;
-            font-size: 64px;
-            line-height: 78.02px;
-            color: #FFFFFF;
-            margin-bottom: 72px;
-        }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    
+    }
 
-        &_card {
-            
-            &-catalogy {
-                background: #FFFFFF;
-                border-radius: 30px;
-                display: flex;
-                height: 500px;
-                margin-bottom: 32px;
+    &__img{
+        height: 500px;
+    }
 
-                &-reverse{
-                    background: #FFFFFF;
-                    border-radius: 30px;
-                    display: flex;
-                    flex-direction: row-reverse;
-                    height: 500px;
-                    margin-bottom: 32px;
-                }
-            }
+    &__description {
+        padding: 48px;
+    }
 
-            &-catalogyleft {
-                padding-top: 48px;
-                width: 600px;
-                padding-left: 48px;
-            }
-        }
+    &__product {
+        color: rgb(32, 32, 39);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        padding-bottom: 24px;
+    }
 
-        &_text {
-            font-family: Montserrat;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 58.51px;
-            padding-bottom: 24px;
-        }
+    &__text {
+        color: rgb(32, 32, 39);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-bottom: 36px;
+    }
 
-        &_about {
-            font-family: Montserrat;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 32px;
-            padding-bottom: 36px;
-            width: 457px;
-        }
+    &__btn {
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        text-decoration: none;
+        box-sizing: border-box;
+        padding: 16px 75px;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        font-family: inherit;
+        cursor: url("./image/cursor.png"), pointer;
+        transition: all 1s;
+      }
+      &__btn:hover {
+        background: #ffffff;
+        color: #000000;
+        border: 1px solid rgb(0, 0, 0);
+      }
+}
 
-        &_btn{
-            cursor: pointer;
-            display: inline-block;
-            width: 247px;
-            height: 66px;
-            border: 1px solid rgb(32, 32, 39);
-            border-radius: 60px;
-            background: rgb(32, 32, 39);
-            color: #FFFFFF;
-            font-family: Montserrat;
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 45px;
-            text-align: center;
-            padding-top: 16px;
-            text-decoration: none;
-        }
+.mini-game {
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+    background: rgb(255, 255, 255);
+    height: 500px;
 
-        &_img {
-            height: 500px;
-        }
+    &_reverse{
+        display: flex;
+        flex-direction: row-reverse;
     }
 }
 
