@@ -1,5 +1,5 @@
 function randomNumber() {
-    return Math.floor(Math.random() = 10);
+    return Math.floor(Math.random() * 10);
 }
 const arr = [];
 for (let i = 0; i < 10; i++) {

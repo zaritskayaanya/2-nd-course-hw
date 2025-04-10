@@ -213,27 +213,27 @@ a:hover {
         background-position: center;
 
         &_type_1 {
-            background: url(image/card1.svg);
+            background: url(image/Card1.png);
         }
 
         &_type_2 {
-            background: url(image/card2.svg);
+            background: url(image/Card2.png);
         }
 
         &_type_3 {
-            background: url(image/card3.svg);
+            background: url(image/Card3.png);
         }
 
         &_type_4 {
-            background: url(image/card4.svg);
+            background: url(image/Card4.png);
         }
 
         &_type_5 {
-            background: url(image/card5.svg);
+            background: url(image/Card5.png);
         }
 
         &_type_6 {
-            background: url(image/card6.svg);
+            background: url(image/Card6.png);
         }
     }
 
@@ -252,9 +252,9 @@ a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 13px;
+        margin-top: 32px;
         margin-left: 32px;
-        margin-bottom: 10px;
+        margin-bottom: 16px;
     }
 
     &__text {

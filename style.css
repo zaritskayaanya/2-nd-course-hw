@@ -197,22 +197,22 @@ a:hover {
   background-position: center;
 }
 .game-card__image_type_1 {
-  background: url(image/card1.svg);
+  background: url(image/Card1.png);
 }
 .game-card__image_type_2 {
-  background: url(image/card2.svg);
+  background: url(image/Card2.png);
 }
 .game-card__image_type_3 {
-  background: url(image/card3.svg);
+  background: url(image/Card3.png);
 }
 .game-card__image_type_4 {
-  background: url(image/card4.svg);
+  background: url(image/Card4.png);
 }
 .game-card__image_type_5 {
-  background: url(image/card5.svg);
+  background: url(image/Card5.png);
 }
 .game-card__image_type_6 {
-  background: url(image/card6.svg);
+  background: url(image/Card6.png);
 }
 .game-card--top {
   margin-top: -40px;
@@ -228,9 +228,9 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 13px;
+  margin-top: 32px;
   margin-left: 32px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 .game-card__text {
   color: rgb(32, 32, 39);
