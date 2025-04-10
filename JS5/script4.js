@@ -6,7 +6,8 @@ function age() {
         alert ('Привет, друг!');
     } else if (age >= 13) {
         alert ('Добро пожаловать!');
-    } else 
+    } else {
         alert ('Вы ввели неправильное значение');
+    }
 }
 console.log(age);
