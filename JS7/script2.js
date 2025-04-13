@@ -4,3 +4,4 @@ function filter(arr, str) {
 }
 console.log(filter(['JavaScript', 'Python', 'Java'], 'ja'));
 
+
