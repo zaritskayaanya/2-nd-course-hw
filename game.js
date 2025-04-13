@@ -68,10 +68,7 @@ function game3() {
 
 // Вызов функции и вывод результата в консоль
 let result = game3(); 
-console.log("Перевернутый текст: " + result);
-
-
-
+alert("Перевернутый текст: " + result);
 
 function game4() {
     const quiz = [
