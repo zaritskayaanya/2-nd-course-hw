@@ -104,3 +104,31 @@ function game4() {
     
     alert(`Вы ответили на ${num} вопросов`);
 }
+
+function game5() {
+    const options = ["камень", "ножницы", "бумага"];
+    let userChoice = prompt("Введите ваш выбор (камень, ножницы или бумага):").toLowerCase();
+    if (!options.includes(userChoice)) {
+        alert("Неверный выбор! Пожалуйста, введите 'камень', 'ножницы' или 'бумага'.");
+        return; 
+    }
+
+    const computerChoice = options[Math.floor(Math.random() * options.length)];
+    
+    let result;
+    if (userChoice === computerChoice) {
+        result = "Ничья!";
+    } else if (
+        (userChoice === "камень" && computerChoice === "ножницы") ||
+        (userChoice === "ножницы" && computerChoice === "бумага") ||
+        (userChoice === "бумага" && computerChoice === "камень")
+    ) {
+        result = "Вы выиграли!";
+    } else {
+        result = "Компьютер выиграл!";
+    }
+
+    alert(`Ваш выбор: ${userChoice}\nВыбор компьютера: ${computerChoice}\nРезультат: ${result}`);
+}
+
+game5();
