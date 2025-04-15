@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Удалить первый элемент description</title>
+</head>
+<body>
+
+    <p class="description">Первый абзац с классом description.</p>
+    <p class="description">Второй абзац с классом description.</p>
+    <p class="other">Третий абзац с классом other.</p>
+    <p class="description">Четвертый абзац с классом description.</p>
+    <p class="other">Пятый абзац с классом other.</p>
+    <button id="removeElementButton">Удалить элемент</button>
+
+    <script>
+        const removeElementButton = document.querySelector('#removeElementButton');
+
+        removeElementButton.addEventListener('click', () => {
+            const firstDescriptionElement = document.querySelector('.description');
+            if (firstDescriptionElement) {
+                firstDescriptionElement.remove(); // Удаляем первый элемент с классом description
+            } else {
+                alert('Нет элементов с классом description для удаления.'); // Сообщение, если нет элементов
+            }
+        });
+    </script>
+
+</body>
+</html>
