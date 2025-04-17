@@ -128,18 +128,18 @@ a:hover {
 
 @keyframes startLine {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 @keyframes marquee {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 }
 .container {
