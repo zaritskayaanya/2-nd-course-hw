@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скрыть и показать заголовок</title>
+</head>
+<body>
+
+    <h1 id="header">Привет, мир!</h1>
+    <button id="toggleButton">Скрыть</button>
+
+    <script>
+        const header = document.querySelector('#header');
+        const toggleButton = document.querySelector('#toggleButton');
+
+        toggleButton.addEventListener('click', () => {
+            if (header.style.display === 'none') {
+                header.style.display = 'block';
+                toggleButton.textContent = 'Скрыть';
+            } else {
+                header.style.display = 'none';
+                toggleButton.textContent = 'Показать';
+            }
+        });
+    </script>
+
+</body>
+</html>

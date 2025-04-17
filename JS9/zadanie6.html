@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить новый абзац</title>
+</head>
+<body>
+
+    <button id="addParagraphButton">Добавить элемент</button>
+
+    <script>
+        const addParagraphButton = document.querySelector('#addParagraphButton');
+
+        addParagraphButton.addEventListener('click', () => {
+            // Создаем новый элемент <p>
+            const newParagraph = document.createElement('p');
+            newParagraph.textContent = 'Новый абзац'; // Задаем текст нового абзаца
+
+            // Добавляем новый элемент в конец документа
+            document.body.appendChild(newParagraph);
+        });
+    </script>
+
+</body>
+</html>
