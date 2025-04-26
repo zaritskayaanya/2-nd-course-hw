@@ -56,7 +56,7 @@ body {
   font-weight: 600;
   line-height: 141.69%;
   font-family: inherit;
-  cursor: url("./img/cursor.png"), pointer;
+  cursor: url(image/cursor.png), pointer;
   transition: all 1s;
   text-decoration: none;
 }
@@ -144,7 +144,7 @@ body {
   height: 473px;
   background: #ffffff;
   border-radius: 30px;
-  cursor: url("./img/cursor.png"), pointer;
+  cursor: url(image/cursor.png), pointer;
   text-decoration: none;
   z-index: 40;
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
@@ -157,7 +157,7 @@ body {
   height: 512px;
   background: #ffffff;
   border-radius: 30px;
-  cursor: url("image/cursor.png"), pointer;
+  cursor: url(image/cursor.png), pointer;
   text-decoration: none;
   z-index: 40;
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
@@ -171,7 +171,7 @@ body {
   background: #ffffff;
   border-radius: 30px;
   text-decoration: none;
-  cursor: url("image/cursor.png"), pointer;
+  cursor: url(image/cursor.png), pointer;
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
 }
 .content-box__game-three:hover {
@@ -214,6 +214,8 @@ body {
 
 .game-box {
   background: #202027;
+  background-size: cover;
+  background-position: center;
   background-image: url(image/Star6_.png), url(image/Star7_.png), url(image/Star8_.png), url(image/Star10_.png);
   background-repeat: no-repeat;
   background-position: 1320px 126px, 1277px 93px, 1319px 3366px, 1249px 3414px;
@@ -270,7 +272,7 @@ body {
   font-weight: 600;
   line-height: 141.69%;
   font-family: inherit;
-  cursor: url("image/cursor.png"), pointer;
+  cursor: url(image/cursor.png), pointer;
   transition: all 1s;
 }
 .game-box__button:hover {

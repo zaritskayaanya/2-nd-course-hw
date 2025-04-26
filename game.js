@@ -9,22 +9,22 @@ const rpsBtn = document.querySelector('#rpsBtn');
 // --- Игра "Угадай число" ---
 function game1() {
     const hiddenNumber = Math.floor(Math.random() * 100) + 1;
-    let guess;
     alert('Игра "Угадай число"');
     while (true) {
         const input = prompt('Попробуйте угадать число от 1 до 100');
         if (input === null) {
             alert('Игра закончена');
-            return;
+            return; 
         }
-        guess = Number(input);
+        const guess = Number(input);
         if (isNaN(guess) || guess < 1 || guess > 100) {
             alert('Введите число от 1 до 100!');
             continue;
         }
         if (guess === hiddenNumber) {
             alert('Вы угадали число! Это было: ' + hiddenNumber);
-            break;
+            
+            return; 
         } else if (guess < hiddenNumber) {
             alert('Больше!');
         } else {
@@ -32,10 +32,6 @@ function game1() {
         }
     }
 }
-
-guessNumberBtn.addEventListener('click', () => {
-    game1();
-});
 
 // --- Арифметическая игра ---
 function game2() {
@@ -65,16 +61,20 @@ function game2() {
         alert('Игра завершена.');
         return;
     }
-    if (parseFloat(userAnswer).toFixed(2) === correctAnswer) {
+
+    // Преобразуем пользовательский ввод в число
+    const userAnswerNumber = parseFloat(userAnswer.replace(',', '.')); // чтобы убрать возможные запятые
+
+    // Округляем правильный ответ для сравнения
+    const correctAnswerNumber = parseFloat(correctAnswer);
+
+    // Сравниваем числа с точностью до двух знаков
+    if (Math.abs(userAnswerNumber - correctAnswerNumber) < 0.01) {
         alert("Верно! Правильный ответ: " + correctAnswer);
     } else {
         alert("Ошибка. Правильный ответ: " + correctAnswer);
     }
 }
-
-mathQuizBtn.addEventListener('click', () => {
-    game2();
-});
 
 // --- Функция переворота текста ---
 function game3() {
@@ -88,10 +88,6 @@ function game3() {
     let joinArray = reverseArray.join("");
     alert("Перевернутый текст: " + joinArray);
 }
-
-reverseBtn.addEventListener('click', () => {
-    game3();
-});
 
 // --- Викторина ---
 function game4() {
@@ -131,10 +127,6 @@ function game4() {
     alert(`Вы ответили правильно на ${numCorrect} из ${quiz.length} вопросов.`);
 }
 
-quizBtn.addEventListener('click', () => {
-    game4();
-});
-
 // --- Камень-ножницы-бумага ---
 function game5() {
     const options = ['камень', 'ножницы', 'бумага'];
@@ -159,18 +151,18 @@ function game5() {
     alert(`Ваш выбор: ${userChoice}\nКомпьютер: ${computerChoice}\nРезультат: ${result}`);
 }
 
-rpsBtn.addEventListener('click', () => {
-    game5();
-});
-
  // --- Функция смены цвета ---
  function game6() {
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-    return `rgb(${r}, ${g}, ${b})`;
+    const colors = '123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += colors[Math.floor(Math.random() * 16)];
+    }
+    return color;
 }
 
 colorBtn.addEventListener('click', () => {
-    document.body.style.backgroundColor = game6();
-});
+    const gamebox = document.querySelector('.game-box');
+    gamebox.style.backgroundColor = game6();
+})
+ 
