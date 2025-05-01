@@ -137,7 +137,15 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: flex-start;
+}
+.content-box__name-top {
+  display: flex;
   gap: 32px;
+}
+.content-box__name-margin {
+  display: flex;
+  gap: 32px;
+  align-items: flex-end;
 }
 .content-box__game-one {
   width: 378px;

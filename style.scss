@@ -141,7 +141,17 @@
       justify-content: space-evenly;
       flex-wrap: wrap;
       align-items: flex-start;
-      gap: 32px;
+
+      &-top{
+        display: flex;
+        gap: 32px;
+      }
+
+      &-margin{
+        display: flex;
+        gap: 32px;
+        align-items: flex-end;
+      }
     }
     &__game-one {
       width: 378px;
